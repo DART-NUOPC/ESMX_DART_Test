@@ -1,0 +1,14 @@
+application:
+  link_packages: OpenMP
+
+components:
+
+  Lumo:
+
+  dart:
+    build_type: script
+    build_script: quickbuild.sh
+    source_dir: DART/models/cdeps/work
+    install_prefix: DART/models/cdeps/work
+    fort_module: dart_comp_nuopc.mod
+
