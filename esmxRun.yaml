@@ -9,15 +9,16 @@ ESMX:
     stopTime:               2012-10-24T19:00:00
 
   Driver:
-    componentList:          [DART, OCN]
+    componentList:          [DART, ATM]
     attributes:
       Verbosity: low
     runSequence: |
       @900
-        DART -> OCN
-        OCN -> DART
+        ATM
+        ATM -> DART
+        DART -> ATM
         DART
-        OCN
+        ATM
       @
 
 attributes: &common # define an anchor so it can be used by multiple components
@@ -33,8 +34,8 @@ DART:
                                 # each list again can be of scalars and lists
                                 # recursively.
 
-OCN:
-  model:            lumo
+ATM:
+  model:            datm
   petList:          [0-1, 3]
   attributes:
     <<: *common
