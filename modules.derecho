@@ -1,0 +1,19 @@
+ncarenv/23.09
+craype/2.7.23
+intel/2023.2.1
+ncarcompilers/1.0.0
+cray-mpich/8.1.27
+netcdf/4.9.2
+esmf/8.6.0
+cmake/3.26.3
+parallel-netcdf/1.12.3
+parallelio/2.6.2
+conda/latest
+mkl/2023.2.0
+hdf5-mpi/1.12.2
+
+need pyyaml
+
+conda create --name conda-esmx
+conda activate conda-esmx
+conda install pyyaml
