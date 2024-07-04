@@ -12,8 +12,10 @@ components:
     fort_module: cdeps_datm_comp.mod
 
   dart:
-    build_type: none
+    build_type: script
+    build_script: quickbuild.sh
+    source_dir: /glade/derecho/scratch/hkershaw/DART/nuopc/DART/models/cdeps/work
     install_prefix: /glade/derecho/scratch/hkershaw/DART/nuopc/DART/models/cdeps/work
-    libraries: dart
     fort_module: dart_comp_nuopc.mod
+
 
