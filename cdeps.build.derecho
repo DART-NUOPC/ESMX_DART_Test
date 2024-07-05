@@ -1,0 +1,8 @@
+git clone --recursive https://github.com/ESCOMP/CDEPS.git
+cd CDEPS
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=../install -DCMAKE_Fortran_FLAGS="-g -DCPRINTEL" -DDISABLE_FoX=ON ../
+make
+make install
+
