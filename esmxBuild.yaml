@@ -1,6 +1,7 @@
 application:
   #link_packages: OpenMP
   link_libraries: piof
+  disable_comps: ESMX_Data
 
 components:
 
