@@ -32,7 +32,7 @@ DART:
   petList: [0, 1, 2, 3]
 
 ATM:
-  model: CDEPS
+  model: datm
   petList: [0, 1, 2, 3]
   attributes:
     <<: *common
