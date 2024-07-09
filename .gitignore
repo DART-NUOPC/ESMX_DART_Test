@@ -1,8 +1,6 @@
 build
 install
 PET*LogFile
-DART
-NUOPC_DART-code-development
 *.a
 *.o
 *.mod
