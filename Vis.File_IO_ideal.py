@@ -1,3 +1,4 @@
+#this plot is an example of the dream version of a plot to show time distribution for processes (EXPLORATORY, NOT THE PLOT USED IN DELIVERABLES)
 #plot to show signficant IO time -> motivation of DART-NUOPC Cap
 #https://www.tutorialspoint.com/execute_matplotlib_online.php
 
