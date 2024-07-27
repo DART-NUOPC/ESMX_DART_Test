@@ -1,4 +1,4 @@
-"plot in python to get visuals for motivation of the DART-NUOPC cap project"
+#plot in python to get visuals for motivation of the DART-NUOPC cap project
 
 import matplotlib.pyplot as plt
 
