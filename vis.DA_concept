@@ -1,0 +1,21 @@
+library(ggplot2)
+#generate data
+set.seed(42)
+time <- seq(1, 100, by=1)
+model_forecast <- sin(time/10) + rnorm(100, sd=0.1)
+observations <- sin(time/10) + rnorm(100, sd=0.2)
+ensemble_da <- sin(time/10) + rnorm(100, sd=0.05)
+
+data <- data.frame(time, model_forecast, observations, ensemble_da)
+
+ggplot(data, aes(x=time)) +
+  geom_line(aes(y=model_forecast, color="Model Forecast")) +
+  geom_point(aes(y=observations, color="Observations")) +
+  geom_line(aes(y=ensemble_da, color="Ensemble DA")) +
+  labs(title="Ensemble Data Assimilation with DART: Pulling Observations Closer to the Model",
+       x="Time",
+       y="Values",
+       color="Legend") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  scale_color_manual(values=c("Model Forecast"="blue", "Observations"="red", "Ensemble DA"="green"))
