@@ -2,3 +2,6 @@
 	path = DART
 	url = https://github.com/DART-NUOPC/DART.git
 	branch = dartlib_nuopc_cap
+[submodule "NUOPC_DART-code-development"]
+	path = NUOPC_DART-code-development
+	url = https://github.com/DART-NUOPC/NUOPC_DART-code-development.git

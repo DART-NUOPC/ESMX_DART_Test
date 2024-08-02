@@ -20,3 +20,14 @@ components:
     source_dir: /glade/u/home/sumansh/Altrun/DART/models/cdeps/work
     install_prefix: /glade/u/home/sumansh/Altrun/DART/models/cdeps/work
     fort_module: dart_comp_nuopc.mod
+
+# Template for adding a new model in this component section
+  # new_model_name:
+  #   build_type: script  # or other appropriate build type
+  #   build_script: new_model_build_script.sh  # path to the build script for the new model
+  #   source_dir: /path/to/new/model/source
+  #   install_prefix: /path/to/new/model/install
+  #   libraries: new_model_library1 new_model_library2  # libraries needed for the new model
+  #   fort_module: new_model_comp.mod  # Fortran module for the new model
+
+  
